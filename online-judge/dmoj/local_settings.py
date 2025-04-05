@@ -10,6 +10,7 @@
 # SECURITY WARNING: keep the secret key used in production secret!
 # You may use this command to generate a key:
 # python3 -c 'from django.core.management.utils import get_random_secret_key;print(get_random_secret_key())'
+import os
 SECRET_KEY = 'This key is not very secure and you should change it.'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -122,8 +123,8 @@ SERVER_EMAIL = 'DMOJ: Modern Online Judge <errors@dmoj.ca>'
 # You must configure your webserver to serve this directory as /static/ in production.
 STATIC_ROOT = os.path.join(BASE_DIR, '../', 'static')
 DMOJ_PROBLEM_DATA_ROOT = os.path.join(BASE_DIR, '../', 'problems')
-#IPV4 = "192.168.1.243"
-IPV4="192.168.180.82"
+IPV4 = os.getenv("DEPLOY_IPV4", "default_value_if_not_found")
+#IPV4="192.168.180.82"
 
 # URL to access static files.
 #STATIC_URL = '/static/'

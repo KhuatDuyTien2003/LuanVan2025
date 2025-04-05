@@ -3,8 +3,10 @@ import socket
 
 from celery import Celery
 from celery.signals import task_failure
-
+import os
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dmoj.settings')
 app = Celery('dmoj')
+
 
 from django.conf import settings  # noqa: E402, I202, django must be imported here
 app.config_from_object(settings, namespace='CELERY')
