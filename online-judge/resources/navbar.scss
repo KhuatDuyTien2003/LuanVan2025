@@ -13,10 +13,10 @@
         min-height: 100%;
         align-items: center;
         white-space: nowrap;
-        color: #5c5954;
+        color: $color;
 
         a {
-            color: #FFF;
+            color: $color;
         }
     }
 
@@ -24,36 +24,36 @@
         text-transform: none;
     }
 
-    & > ul {
+    &>ul {
         display: block;
         margin: 0;
 
-        & > li {
-            & > a {
+        &>li {
+            &>a {
                 display: block;
                 padding: 0;
                 height: 100%;
 
-                & > span {
+                &>span {
                     font-size: 13px;
                     padding: 10px 10px;
                     display: block;
                     white-space: nowrap;
 
-                    & > img {
+                    &>img {
                         vertical-align: middle;
                         border-radius: $widget_border_radius;
                         margin-right: 6px;
                     }
 
-                    & > span {
+                    &>span {
                         vertical-align: middle;
-                        color: #eee;
+                        color: $color;
                     }
                 }
             }
 
-            & > ul {
+            &>ul {
                 left: 0;
             }
         }
@@ -66,8 +66,7 @@
 }
 
 #nav-container {
-    background: #3b3b3b;
-
+    background-color: $backgroud;
     // opacity: 0.77
     // filter: alpha(opacity=77)
     height: 100%;
@@ -87,7 +86,7 @@ nav {
 
         li {
             display: inline-block;
-            color: #FFF;
+            color: $color;
             text-transform: uppercase;
             position: relative;
 
@@ -102,27 +101,28 @@ nav {
                 }
             }
 
-            a, button {
+            a,
+            button {
                 display: inline-block;
                 text-decoration: none;
                 vertical-align: middle;
-                color: #FFF;
+                color: $color;
                 padding: 13px 7px;
                 height: 18px;
 
                 &:link {
-                    color: #FFF;
+                    color: $color;
                 }
 
                 &:hover {
-                    color: #FFF;
-                    background: rgba(255, 255, 255, 0.25);
+                    color: $color_highlight;
+                    background: $backgourd_hightlight;
                     margin: 0;
                 }
 
                 &.active {
-                    color: #FFF;
-                    background: $highlight_blue;
+                    color: $color_highlight;
+                    background: $backgourd_hightlight;
                 }
 
                 .nav-expand {
@@ -135,8 +135,8 @@ nav {
                 position: absolute;
                 left: 5px;
                 display: none;
-                color: #fff;
-                background: #3b3b3b;
+                color: $color;
+                background: $backgroud;
                 margin: 0 !important;
                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 
@@ -151,12 +151,13 @@ nav {
                 li {
                     display: block;
 
-                    a, button {
+                    a,
+                    button {
                         padding: 8px 20px 8px 8px !important;
                         font-size: 0.8em;
                         line-height: 18px;
                         display: block;
-                        border-left: 4px solid $highlight_blue;
+                        border-left: 4px solid $backgourd_hightlight;
                         white-space: nowrap;
                     }
                 }
@@ -171,7 +172,9 @@ nav {
                 height: auto;
             }
 
-            &:hover > ul, &:active > ul, &:focus > ul {
+            &:hover>ul,
+            &:active>ul,
+            &:focus>ul {
                 display: block !important;
             }
 
@@ -199,6 +202,10 @@ nav {
     display: none;
 }
 
+span#sub:hover {
+    color: $color_highlight;
+}
+
 @media (max-width: 760px) {
     #navigation {
         height: 36px;
@@ -209,15 +216,15 @@ nav {
         display: block;
         line-height: 26px;
         font-size: 2em;
-        color: #FFF;
+        color: $color;
         padding: 0 0.25em;
         margin: 4px 0.25em;
         white-space: nowrap;
         float: left;
 
         &.hover {
-            color: #4db7fe;
-            text-shadow: 0 0 5px $highlight_blue;
+            color: $color_highlight;
+            text-shadow: 0 0 5px $color_highlight;
             transition-duration: 0.25s;
         }
     }
@@ -228,8 +235,8 @@ nav {
         margin: 0;
         position: fixed;
         top: 36px;
-        background: #3b3b3b;
-        bottom: 0;
+        background: $backgroud;
+        color: $color;
         width: 8em;
         left: 0;
 
@@ -267,7 +274,7 @@ nav {
         }
     }
 
-    #user-links > ul > li > a > span {
+    #user-links>ul>li>a>span {
         padding: 6px 8px;
     }
 }
@@ -279,7 +286,7 @@ nav {
                 display: none;
             }
 
-            &:not(:hover) > ul {
+            &:not(:hover)>ul {
                 display: none !important;
             }
 

@@ -11,17 +11,28 @@
   max-width: 100%;
   height: auto;
 }
-.content-description img.tex-full, .content-description img.tex-image, .content-description img.inline-math, .content-description img.display-math {
+.content-description img.tex-full,
+.content-description img.tex-image,
+.content-description img.inline-math,
+.content-description img.display-math {
   filter: invert(1) hue-rotate(180deg);
 }
-.content-description h1, .content-description h2, .content-description h3, .content-description h4, .content-description h5, .content-description h6 {
+.content-description h1,
+.content-description h2,
+.content-description h3,
+.content-description h4,
+.content-description h5,
+.content-description h6 {
   font-weight: normal;
-  color: #eee;
+  color: #ff7a4e;
   margin-bottom: 0.75em;
   padding: 0;
   background: 0;
 }
-.content-description h3, .content-description h4, .content-description h5, .content-description h6 {
+.content-description h3,
+.content-description h4,
+.content-description h5,
+.content-description h6 {
   font-weight: bold;
 }
 .content-description h1 {
@@ -64,13 +75,18 @@
   margin: 25px 0 20px 0;
   padding: 0;
 }
-.content-description pre, .content-description code, .content-description kbd, .content-description samp, .content-description span.code {
+.content-description pre,
+.content-description code,
+.content-description kbd,
+.content-description samp,
+.content-description span.code {
   color: #f8f8f8;
   page-break-inside: avoid;
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   font-size: 0.98em;
 }
-.content-description code, .content-description span.code {
+.content-description code,
+.content-description span.code {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
   margin: 0 2px;
   padding: 0 5px;
@@ -90,7 +106,8 @@
   color: #f8f8f8;
   border-radius: 4px;
 }
-.content-description pre code, .content-description pre div.code {
+.content-description pre code,
+.content-description pre div.code {
   border: 0;
   line-height: 1em;
   margin: 0;
@@ -99,7 +116,8 @@
   font-size: 1em;
   color: #f8f8f8;
 }
-.content-description b, .content-description strong {
+.content-description b,
+.content-description strong {
   font-weight: bold;
 }
 .content-description dfn {
@@ -132,7 +150,8 @@
 .content-description sub {
   bottom: -0.25em;
 }
-.content-description ul, .content-description ol {
+.content-description ul,
+.content-description ol {
   padding: 0 0 0 2em;
 }
 .content-description li p:last-child {

@@ -6,7 +6,9 @@
 }
 
 a {
-    &.upvote-link, &.downvote-link {
+
+    &.upvote-link,
+    &.downvote-link {
         color: $color_primary100;
     }
 
@@ -48,7 +50,7 @@ a {
         color: $color_primary75;
     }
 
-    a + a {
+    a+a {
         padding-left: 2px;
     }
 }
@@ -63,7 +65,8 @@ a {
 .comment-post-wrapper {
     padding-bottom: 5px;
 
-    input, textarea {
+    input,
+    textarea {
         min-width: 100%;
         max-width: 100%;
 
@@ -95,7 +98,8 @@ a {
     word-break: break-word;
 }
 
-.previous-revision, .next-revision {
+.previous-revision,
+.next-revision {
     color: $color_primary75;
 }
 
@@ -105,7 +109,7 @@ a {
         padding-left: 1em;
         padding-top: 0.5em !important;
         border: 1px solid $color_primary25;
-        background: $color_primary5;
+        background: $backgroud;
         border-radius: $widget_border_radius;
     }
 
@@ -125,7 +129,7 @@ a {
         }
     }
 
-    .comment:target > .comment-display {
+    .comment:target>.comment-display {
         border: 1px solid $highlight_blue;
         border-left: 10px solid $highlight_blue;
         padding-left: 5px;

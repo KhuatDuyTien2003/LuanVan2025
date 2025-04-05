@@ -17,6 +17,10 @@ from django_jinja.builtins import DEFAULT_EXTENSIONS
 from jinja2 import select_autoescape
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+def my_autoescape(template_name):
+    # Tùy logic bạn muốn, ví dụ:
+    return template_name.endswith('.html') or template_name.endswith('.xml')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -357,7 +361,8 @@ TEMPLATES = [
                 'social_django.context_processors.backends',
                 'social_django.context_processors.login_redirect',
             ],
-            'autoescape': select_autoescape(['html', 'xml']),
+            # 'autoescape': select_autoescape(['html', 'xml']),
+           'autoescape': my_autoescape,
             'trim_blocks': True,
             'lstrip_blocks': True,
             'translation_engine': 'judge.utils.safe_translations',

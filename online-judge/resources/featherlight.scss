@@ -5,7 +5,10 @@
 .featherlight {
     display: none;
     position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 1000;
     text-align: center;
     white-space: nowrap;
@@ -51,7 +54,9 @@
         display: block;
     }
 
-    script.featherlight-inner, link.featherlight-inner, style.featherlight-inner {
+    script.featherlight-inner,
+    link.featherlight-inner,
+    style.featherlight-inner {
         display: none;
     }
 

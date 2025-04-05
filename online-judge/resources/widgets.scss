@@ -5,7 +5,8 @@
     font-size: 1.9em;
 }
 
-.facebook-this, .tweet-this {
+.facebook-this,
+.tweet-this {
     display: inline;
 }
 
@@ -23,7 +24,9 @@
 }
 
 // Bootstrap-y buttons
-.button, button, input[type=submit] {
+.button,
+button,
+input[type=submit] {
     color: white !important;
     text-decoration: none !important;
     cursor: pointer;
@@ -70,11 +73,15 @@
 }
 
 input {
-    &[type=text], &[type=password], &[type=email], &[type=number] {
+
+    &[type=text],
+    &[type=password],
+    &[type=email],
+    &[type=number] {
         padding: 4px 8px;
-        color: $color_primary75;
-        background: $color_primary0 none;
-        border: 1px solid $color_primary25;
+        color: $color;
+        background: $light_backgroud none;
+        border: 1px solid $color_border;
         border-radius: $widget_border_radius;
         box-shadow: 0 1px 1px rgba($color_primary100, 0.075) inset;
         transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
@@ -85,7 +92,7 @@ input {
         font-size: $base_font_size;
 
         &:hover {
-            border-color: rgba(82, 168, 236, 0.8);
+            border-color: $backgourd_hightlight;
             box-shadow: inset 0 1px 1px rgba($color_primary100, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
         }
 
@@ -103,8 +110,8 @@ input {
     &[type=checkbox] {
         appearance: none;
         vertical-align: middle;
-        border: 1px solid $color_primary50;
-        background: $color_primary0;
+        border: 1px solid $color_border;
+        background: $light_backgroud;
         border-radius: 2px;
         width: 0.95em;
         height: 0.95em;
@@ -119,9 +126,9 @@ input {
 
 textarea {
     padding: 4px 8px;
-    color: $color_primary75;
-    background: $color_primary0 none;
-    border: 1px solid $color_primary25;
+    color: $color;
+    background: $light_backgroud none;
+    border: 1px solid $color_primary75;
     border-radius: $widget_border_radius;
     box-shadow: 0 1px 1px rgba($color_primary100, 0.075) inset;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
@@ -129,13 +136,13 @@ textarea {
 }
 
 textarea:hover {
-    border-color: rgba(82, 168, 236, 0.8);
-    box-shadow: inset 0 1px 1px rgba($color_primary100, 0.075), 0 0 4px rgba(82, 168, 236, 0.6);
+    border-color: $backgourd_hightlight;
+    box-shadow: inset 0 1px 1px rgba($color_primary100, 0.075), 0 0 4px rgba(255, 153, 0, 0.6);
 }
 
 textarea:focus {
-    border-color: rgba(82, 168, 236, 0.8);
-    box-shadow: inset 0 1px 1px rgba($color_primary100, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    border-color: backgourd_hightlight;
+    box-shadow: inset 0 1px 1px rgba($color_primary100, 0.075), 0 0 8px rgba(255, 187, 0, 0.6);
     outline: 0;
 }
 
@@ -161,9 +168,9 @@ textarea:focus {
 
 // Bootstrap-y tabs
 .ul_tab_a_active {
-    color: $color_primary100;
+    color: $color;
     // Cover up the bottom border of active tabs with this color
-    background: $color_pageBg;
+    background: $light_backgroud;
     cursor: default;
     border: 1px solid $color_primary25;
     border-bottom-color: $color_pageBg;
@@ -181,29 +188,33 @@ textarea:focus {
     .tab {
         .tab-icon {
             padding-right: 0.3em;
-            color: $color_primary50;
+            color: $color_header;
         }
 
-        a, span {
+        a,
+        span {
             border-top-width: 3px !important;
         }
 
         &.active {
-            a, span {
+
+            a,
+            span {
                 border-top-color: $highlight_blue !important;
+                font-weight: bold;
             }
 
             .tab-icon {
-                color: $color_primary100;
+                color: $color_header;
             }
         }
     }
 
     h2 {
-        color: $color_primary75;
+        color: $color_header;
     }
 
-    > ul {
+    >ul {
         margin: 0;
         margin-bottom: -1px;
         padding: 0;
@@ -212,11 +223,12 @@ textarea:focus {
         overflow-x: auto;
         overflow-y: hidden;
 
-        > li {
+        >li {
             position: relative;
             display: block;
 
-            &.active > a, &.active > span {
+            &.active>a,
+            &.active>span {
                 @extend .ul_tab_a_active;
 
                 &:hover {
@@ -228,7 +240,8 @@ textarea:focus {
                 }
             }
 
-            > a, > span {
+            >a,
+            >span {
                 margin-right: 2px;
                 line-height: 1.42857;
                 border: 1px solid transparent;
@@ -236,7 +249,8 @@ textarea:focus {
                 position: relative;
                 display: block;
                 padding: 10px 15px;
-                color: $color_primary66;
+                color: $color;
+                font-weight: bold;
                 text-decoration: none;
                 white-space: nowrap;
             }
@@ -258,44 +272,54 @@ ul.pagination {
         li {
             display: inline;
 
-            &:first-child > {
-                a, span {
+            &:first-child> {
+
+                a,
+                span {
                     margin-left: 0;
                     border-top-left-radius: $widget_border_radius;
                     border-bottom-left-radius: $widget_border_radius;
                 }
             }
 
-            &:last-child > {
-                a, span {
+            &:last-child> {
+
+                a,
+                span {
                     border-top-right-radius: $widget_border_radius;
                     border-bottom-right-radius: $widget_border_radius;
                 }
             }
 
             > {
-                a, span {
+
+                a,
+                span {
                     position: relative;
                     float: left;
                     padding: 4px 12px;
                     line-height: 1.42857;
                     text-decoration: none;
                     color: $color_primary0;
-                    background-color: $color_primary75;
+                    background-color: $light_backgroud;
                     border: 1px solid $color_primary50;
                     margin-left: -1px;
                 }
             }
         }
 
-        .disabled-page > {
-            a, span {
+        .disabled-page> {
+
+            a,
+            span {
                 color: $color_primary50;
             }
         }
 
-        .active-page > {
-            a, span {
+        .active-page> {
+
+            a,
+            span {
                 z-index: 2;
                 color: #FFF;
                 background-color: $highlight_blue;
@@ -342,11 +366,13 @@ ul.pagination {
     border-color: #ebccd1;
 }
 
-.alert-dismissable, .alert-dismissible {
+.alert-dismissable,
+.alert-dismissible {
     padding-right: 35px;
 }
 
-.alert-dismissable .close, .alert-dismissible .close {
+.alert-dismissable .close,
+.alert-dismissible .close {
     position: relative;
     top: -2px;
     right: -21px;
@@ -374,7 +400,9 @@ a.close {
 }
 
 .close {
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: #000;
         text-decoration: none;
         cursor: pointer;
@@ -407,9 +435,9 @@ a.close {
 
 .sidebox h3 {
     margin: 0 -5px;
-    background: $color_primary75;
+    background: $backgourd_hightlight;
     border-radius: $widget_border_radius $widget_border_radius 0 0;
-    color: $color_primary0;
+    color: $color_header_2;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 7px;

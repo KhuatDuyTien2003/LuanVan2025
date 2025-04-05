@@ -1,5 +1,7 @@
 @import "vars";
 
+
+
 .blog-content {
     padding-right: 0em;
     flex: 73.5%;
@@ -22,20 +24,19 @@
             font-size: 1.7em;
 
             a {
-                color: $color_link50;
 
                 &:hover {
-                    color: $color_link100;
+                    color: $color_highlight
                 }
 
                 &:active {
-                    color: $color_link200;
+                    color: $highlight_blue
                 }
             }
         }
 
         .comment-count-link {
-            color: $color_primary75;
+            color: $color;
         }
 
         .comment-icon {
@@ -76,7 +77,9 @@
 }
 
 @media (min-width: 800px) {
-    .blog-content, .blog-sidebar {
+
+    .blog-content,
+    .blog-sidebar {
         display: block !important;
     }
 
@@ -107,7 +110,7 @@
         height: 1em;
         padding: 0.1em;
         font-size: 0.8em;
-        color: white;
+        color: $color;
         border-radius: 0.2em;
         display: inline-block;
         margin-right: 0.2em;

@@ -10,10 +10,10 @@
   min-height: 100%;
   align-items: center;
   white-space: nowrap;
-  color: #5c5954;
+  color: black;
 }
 #user-links .anon a {
-  color: #FFF;
+  color: black;
 }
 #user-links li {
   text-transform: none;
@@ -40,7 +40,7 @@
 }
 #user-links > ul > li > a > span > span {
   vertical-align: middle;
-  color: #eee;
+  color: black;
 }
 #user-links > ul > li > ul {
   left: 0;
@@ -52,7 +52,7 @@
 }
 
 #nav-container {
-  background: #3b3b3b;
+  background-color: #ffffff;
   height: 100%;
 }
 
@@ -70,7 +70,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  color: #FFF;
+  color: black;
   text-transform: uppercase;
   position: relative;
 }
@@ -83,27 +83,32 @@ nav ul li.home-nav-element a:hover {
   padding-top: 0;
   padding-bottom: 0;
 }
-nav ul li a, nav ul li button {
+nav ul li a,
+nav ul li button {
   display: inline-block;
   text-decoration: none;
   vertical-align: middle;
-  color: #FFF;
+  color: black;
   padding: 13px 7px;
   height: 18px;
 }
-nav ul li a:link, nav ul li button:link {
-  color: #FFF;
+nav ul li a:link,
+nav ul li button:link {
+  color: black;
 }
-nav ul li a:hover, nav ul li button:hover {
-  color: #FFF;
-  background: rgba(255, 255, 255, 0.25);
+nav ul li a:hover,
+nav ul li button:hover {
+  color: #fff;
+  background: #ff7a4e;
   margin: 0;
 }
-nav ul li a.active, nav ul li button.active {
-  color: #FFF;
-  background: #2980B9;
+nav ul li a.active,
+nav ul li button.active {
+  color: #fff;
+  background: #ff7a4e;
 }
-nav ul li a .nav-expand, nav ul li button .nav-expand {
+nav ul li a .nav-expand,
+nav ul li button .nav-expand {
   display: none;
 }
 nav ul li ul {
@@ -111,8 +116,8 @@ nav ul li ul {
   position: absolute;
   left: 5px;
   display: none;
-  color: #fff;
-  background: #3b3b3b;
+  color: black;
+  background: #ffffff;
   margin: 0 !important;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -122,12 +127,13 @@ nav ul li ul li:first-child a.active {
 nav ul li ul li {
   display: block;
 }
-nav ul li ul li a, nav ul li ul li button {
+nav ul li ul li a,
+nav ul li ul li button {
   padding: 8px 20px 8px 8px !important;
   font-size: 0.8em;
   line-height: 18px;
   display: block;
-  border-left: 4px solid #2980B9;
+  border-left: 4px solid #ff7a4e;
   white-space: nowrap;
 }
 nav ul li button {
@@ -161,6 +167,10 @@ nav .nav-divider {
   display: none;
 }
 
+span#sub:hover {
+  color: #fff;
+}
+
 @media (max-width: 760px) {
   #navigation {
     height: 36px;
@@ -170,15 +180,15 @@ nav .nav-divider {
     display: block;
     line-height: 26px;
     font-size: 2em;
-    color: #FFF;
+    color: black;
     padding: 0 0.25em;
     margin: 4px 0.25em;
     white-space: nowrap;
     float: left;
   }
   #navicon.hover {
-    color: #4db7fe;
-    text-shadow: 0 0 5px #2980B9;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
     transition-duration: 0.25s;
   }
   #nav-list {
@@ -187,8 +197,8 @@ nav .nav-divider {
     margin: 0;
     position: fixed;
     top: 36px;
-    background: #3b3b3b;
-    bottom: 0;
+    background: #ffffff;
+    color: black;
     width: 8em;
     left: 0;
   }

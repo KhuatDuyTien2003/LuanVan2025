@@ -54,10 +54,11 @@ DATABASES = {
 # Internationalization.
 # Documentation: <https://docs.djangoproject.com/en/3.2/topics/i18n/>
 LANGUAGE_CODE = 'en-ca'
-DEFAULT_USER_TIME_ZONE = 'America/Toronto'
+DEFAULT_USER_TIME_ZONE = 'Asia/Ho_Chi_Minh'
 USE_I18N = True
 USE_L10N = True
-USE_TZ = False
+USE_TZ = True
+
 
 ## django-compressor settings, for speeding up page load times by minifying CSS and JavaScript files.
 # Documentation: <https://django-compressor.readthedocs.io/en/latest/>
@@ -79,16 +80,13 @@ STATICFILES_FINDERS += ('compressor.finders.CompressorFinder',)
 # your email settings.
 
 # Use this if you are just testing.
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-# The following block is included for your convenience, if you want
-# to use Gmail.
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_USE_TLS = True
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_HOST_USER = '<your account>@gmail.com'
-#EMAIL_HOST_PASSWORD = '<your password>'
-#EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'tienk.cv@gmail.com'
+EMAIL_HOST_PASSWORD = 'cevl xxim bbrn gggp'
+EMAIL_PORT = 587
 
 # To use Mailgun, uncomment this block.
 # You will need to run `pip install django-mailgun` to get `MailgunBackend`.
@@ -124,7 +122,8 @@ SERVER_EMAIL = 'DMOJ: Modern Online Judge <errors@dmoj.ca>'
 # You must configure your webserver to serve this directory as /static/ in production.
 STATIC_ROOT = os.path.join(BASE_DIR, '../', 'static')
 DMOJ_PROBLEM_DATA_ROOT = os.path.join(BASE_DIR, '../', 'problems')
-IPV4 = "192.168.1.243"
+#IPV4 = "192.168.1.243"
+IPV4="192.168.180.82"
 
 # URL to access static files.
 #STATIC_URL = '/static/'
@@ -137,10 +136,10 @@ IPV4 = "192.168.1.243"
 ########## DMOJ-specific settings ##########
 ############################################
 
-## DMOJ site display settings.
-SITE_NAME = 'DMOJ'
-SITE_LONG_NAME = 'DMOJ: Modern Online Judge'
-SITE_ADMIN_EMAIL = 'admin@example.com'
+## DMOJ site display settings.sx
+SITE_NAME = 'UNETI STUDY'
+SITE_LONG_NAME = 'UNETI STUDY'
+SITE_ADMIN_EMAIL = 'tienk.cv@gmail.com'
 TERMS_OF_SERVICE_URL = '//dmoj.ca/tos/'  # Use a flatpage.
 
 ## Bridge controls.
@@ -195,6 +194,9 @@ EVENT_DAEMON_POLL = '/channels/'
 ## Celery
 #CELERY_BROKER_URL = 'redis://localhost:6379'
 #CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+CELERY_RESULT_BACKEND = 'rpc://'
+
 
 ## CDN control.
 # Base URL for a copy of Ace editor.

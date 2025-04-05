@@ -1,0 +1,5 @@
+archive: ptbn.zip
+test_cases:
+- in: ptbn/1.in
+  out: ptbn/1.out
+  points: 100

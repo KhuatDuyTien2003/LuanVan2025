@@ -12,8 +12,8 @@
 }
 .table th {
   height: 2em;
-  color: #0f0f0f;
-  background-color: #ccc;
+  color: #ff7a4e;
+  background-color: #ff7a4e;
   border-color: #808080;
   border-width: 0 1px 1px 0;
   border-style: solid;
@@ -32,10 +32,12 @@
   vertical-align: middle;
   text-align: center;
 }
-.table th:first-child, .table td:first-child {
+.table th:first-child,
+.table td:first-child {
   border-left-width: 1px;
 }
-.table tr:first-child th, .table tr:first-child td {
+.table tr:first-child th,
+.table tr:first-child td {
   border-top-width: 1px;
 }
 .table tr:first-child th:first-child {

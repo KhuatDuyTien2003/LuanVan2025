@@ -1,11 +1,13 @@
 @import "vars";
 
-.admin a, .admin {
+.admin a,
+.admin {
     color: $color_primary100 !important;
     font-weight: bold !important;
 }
 
-.deleted-user, .deleted-user a {
+.deleted-user,
+.deleted-user a {
     color: #999;
     font-weight: normal;
     text-decoration: line-through $color_primary100;
@@ -15,6 +17,7 @@
     circle {
         stroke: $color;
     }
+
     path {
         fill: $color;
     }
@@ -56,7 +59,8 @@ svg.rate-box {
         @include rate-svg-color($color_rating_master);
     }
 
-    &.rate-grandmaster, &.rate-target {
+    &.rate-grandmaster,
+    &.rate-target {
         @include rate-svg-color($color_rating_grandmaster);
     }
 
@@ -76,32 +80,41 @@ svg.rate-box {
     }
 }
 
-.rate-none, .rate-none a {
-    color: $color_rating_none;
+.rate-none,
+.rate-none a {
+    color: $color;
     font-weight: normal;
 }
 
-.rate-newbie, .rate-newbie a {
+.rate-newbie,
+.rate-newbie a {
     color: $color_rating_newbie;
 }
 
-.rate-amateur, .rate-amateur a {
+.rate-amateur,
+.rate-amateur a {
     color: $color_rating_amateur;
 }
 
-.rate-expert, .rate-expert a {
+.rate-expert,
+.rate-expert a {
     color: $color_rating_expert;
 }
 
-.rate-candidate-master, .rate-candidate-master a {
+.rate-candidate-master,
+.rate-candidate-master a {
     color: $color_rating_candidate_master;
 }
 
-.rate-master, .rate-master a {
+.rate-master,
+.rate-master a {
     color: $color_rating_master;
 }
 
-.rate-grandmaster, .rate-grandmaster a, .rate-target, .rate-target a {
+.rate-grandmaster,
+.rate-grandmaster a,
+.rate-target,
+.rate-target a {
     color: $color_rating_grandmaster;
 }
 

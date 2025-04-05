@@ -17,17 +17,14 @@
   font-weight: 600;
   font-size: 1.7em;
 }
-.blog-content .post .title a {
-  color: #06d;
-}
 .blog-content .post .title a:hover {
-  color: #49e;
+  color: #fff;
 }
 .blog-content .post .title a:active {
-  color: #d83;
+  color: rgb(246, 156, 0);
 }
 .blog-content .post .comment-count-link {
-  color: #ccc;
+  color: black;
 }
 .blog-content .post .comment-icon {
   padding: 0 0.2em 0 0.5em;
@@ -59,7 +56,8 @@
 }
 
 @media (min-width: 800px) {
-  .blog-content, .blog-sidebar {
+  .blog-content,
+  .blog-sidebar {
     display: block !important;
   }
   .blog-content {
@@ -86,7 +84,7 @@
   height: 1em;
   padding: 0.1em;
   font-size: 0.8em;
-  color: white;
+  color: black;
   border-radius: 0.2em;
   display: inline-block;
   margin-right: 0.2em;

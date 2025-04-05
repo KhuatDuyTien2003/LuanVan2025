@@ -30,16 +30,16 @@ form#ticket-form {
         display: flex;
         flex-direction: row-reverse;
 
-        & > main {
+        &>main {
             flex: 1;
         }
 
-        & > aside {
+        &>aside {
             flex: 1;
             max-width: 200px;
             margin-left: 1em;
 
-            & > div {
+            &>div {
                 position: sticky;
                 top: 60px;
             }
@@ -214,6 +214,7 @@ div.ticket-title {
     padding: 8px 10px;
 }
 
-.new-message .submit, #edit-notes .submit {
+.new-message .submit,
+#edit-notes .submit {
     margin: 10px 0 0 auto;
 }

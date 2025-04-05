@@ -15,7 +15,7 @@
     height: 300px;
     width: 100%;
     max-width: 100%;
-    background: $color_primary0;
+    background: #efefef;
     border: 1px solid $color_primary50;
     font-family: Consolas, "Liberation Mono", Monaco, "Courier New", monospace !important;
 }
@@ -48,7 +48,7 @@
     cursor: pointer;
 }
 
-.wmd-button > span {
+.wmd-button>span {
     @include vars-img;
     background: url($path_to_root + '/pagedown/wmd-buttons.png') no-repeat 0 0;
     width: 20px;
@@ -65,17 +65,17 @@
     background-color: $color_primary5;
 }
 
-.wmd-prompt-dialog > div {
+.wmd-prompt-dialog>div {
     font-size: 0.8em;
     font-family: arial, helvetica, sans-serif;
 }
 
-.wmd-prompt-dialog > form > input[type="text"] {
+.wmd-prompt-dialog>form>input[type="text"] {
     border: 1px solid $color_primary25;
     color: $color_primary100;
 }
 
-.wmd-prompt-dialog > form > input[type="button"] {
+.wmd-prompt-dialog>form>input[type="button"] {
     border: 1px solid $color_primary50;
     font-family: trebuchet MS, helvetica, sans-serif;
     font-size: 0.8em;
@@ -101,7 +101,12 @@
     display: none;
 }
 
-.wmd-preview h1, .wmd-preview h2, .wmd-preview h3, .wmd-preview h4, .wmd-preview h5, .wmd-preview h6 {
+.wmd-preview h1,
+.wmd-preview h2,
+.wmd-preview h3,
+.wmd-preview h4,
+.wmd-preview h5,
+.wmd-preview h6 {
     font-weight: bold !important;
     margin-left: 0 !important;
 }
@@ -120,6 +125,8 @@
     font-size: 1em !important
 }
 
-.wmd-preview:not(.dmmd-preview) h4, .wmd-preview:not(.dmmd-preview) h5, .wmd-preview:not(.dmmd-preview) h6 {
+.wmd-preview:not(.dmmd-preview) h4,
+.wmd-preview:not(.dmmd-preview) h5,
+.wmd-preview:not(.dmmd-preview) h6 {
     font-size: .9em !important
 }

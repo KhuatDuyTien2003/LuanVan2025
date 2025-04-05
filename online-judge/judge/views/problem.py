@@ -608,11 +608,7 @@ class RandomProblem(ProblemList):
             return HttpResponseRedirect('%s%s%s' % (reverse('problem_list'), request.META['QUERY_STRING'] and '?',
                                                     request.META['QUERY_STRING']))
         return HttpResponseRedirect(queryset[randrange(count)].get_absolute_url())
-
-
 user_logger = logging.getLogger('judge.user')
-
-
 class ProblemSubmit(LoginRequiredMixin, ProblemMixin, TitleMixin, SingleObjectFormView):
     template_name = 'problem/submit.html'
     form_class = ProblemSubmitForm

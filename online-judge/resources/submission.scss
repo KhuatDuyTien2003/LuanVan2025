@@ -25,11 +25,11 @@
         background: $color_primary10;
     }
 
-    &:not(:empty) ~ & {
+    &:not(:empty)~& {
         border-top: none;
     }
 
-    > div {
+    >div {
         padding: 7px 5px;
         vertical-align: middle;
         border-bottom: $color_primary25 1px solid;
@@ -118,7 +118,8 @@
     color: $color_primary50;
 }
 
-label[for="language"], label[for="status"] {
+label[for="language"],
+label[for="status"] {
     padding-bottom: 0.25em;
     display: block;
 }
@@ -195,7 +196,8 @@ label[for="language"], label[for="status"] {
     }
 }
 
-.source-code pre, .source-ln pre {
+.source-code pre,
+.source-ln pre {
     margin: 0;
     padding: 0;
     white-space: pre;
@@ -279,7 +281,7 @@ label[for="language"], label[for="status"] {
         vertical-align: top;
     }
 
-    td.case-output + td.case-ext-feedback {
+    td.case-output+td.case-ext-feedback {
         width: 50%;
     }
 
@@ -303,12 +305,16 @@ label[for="language"], label[for="status"] {
     font-weight: bold;
 }
 
-.case-TLE, .case-SC {
+.case-TLE,
+.case-SC {
     color: gray;
     font-weight: bold;
 }
 
-.case-MLE, .case-OLE, .case-RTE, .case-IR {
+.case-MLE,
+.case-OLE,
+.case-RTE,
+.case-IR {
     color: orange;
     font-weight: bold;
 }

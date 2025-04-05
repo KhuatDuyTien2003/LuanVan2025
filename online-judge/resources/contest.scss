@@ -6,7 +6,7 @@
 
     th {
         border: 1px solid $color_primary25;
-        background: $color_primary5;
+        background: $highlight_blue;
     }
 
     td {
@@ -38,7 +38,8 @@
                 }
 
                 a {
-                    color: $color_primary75;
+                    color: $color;
+                    font-weight: bold;
 
                     &:hover {
                         text-decoration: underline;
@@ -53,11 +54,11 @@
     }
 
     .noday {
-        background: $color_primary10;
+        background: $color_primary75;
     }
 
-    .today {
-        background: rgba($color_link200, 0.2);
+    x .today {
+        background: rgba($color_link200, 0.5);
     }
 }
 
@@ -93,6 +94,7 @@
     div#details ul {
         margin-bottom: 0;
         list-style: none;
+
         p {
             margin: 0;
         }
@@ -180,7 +182,7 @@ form.contest-join-pseudotab {
         color: $color_primary75;
     }
 
-    a + a {
+    a+a {
         padding-left: 1px;
     }
 
@@ -193,7 +195,9 @@ form.contest-join-pseudotab {
         position: relative;
     }
 
-    .userinfo a, .user-name a, .user-name form {
+    .userinfo a,
+    .user-name a,
+    .user-name form {
         display: inline-block !important;
     }
 
@@ -230,35 +234,42 @@ form.contest-join-pseudotab {
         background-color: $color_contest_ranking_disqualified !important;
     }
 
-    .full-score, .full-score a {
+    .full-score,
+    .full-score a {
         font-weight: bold;
         color: green;
     }
 
-    .partial-score, .partial-score a {
+    .partial-score,
+    .partial-score a {
         color: green;
     }
 
-    .failed-score, .failed-score a {
+    .failed-score,
+    .failed-score a {
         font-weight: bold;
         color: red;
     }
 
-    .pretest-full-score, .pretest-full-score a {
+    .pretest-full-score,
+    .pretest-full-score a {
         font-weight: bold;
         color: #2980b9;
     }
 
-    .pretest-partial-score, .pretest-partial-score a {
+    .pretest-partial-score,
+    .pretest-partial-score a {
         color: #2980b9;
     }
 
-    .pretest-failed-score, .pretest-failed-score a {
+    .pretest-failed-score,
+    .pretest-failed-score a {
         font-weight: bold;
         color: red;
     }
 
-    .user-points, .user-points a {
+    .user-points,
+    .user-points a {
         font-weight: bold;
         color: $color_primary100;
     }

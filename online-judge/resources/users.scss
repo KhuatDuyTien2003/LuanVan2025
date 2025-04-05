@@ -14,7 +14,8 @@ tr:target {
     height: 2.3em;
 }
 
-.user-search-image, .user-search-name {
+.user-search-image,
+.user-search-name {
     vertical-align: middle;
 }
 
@@ -23,16 +24,22 @@ tr:target {
 }
 
 .users-table {
-    th.rank, th.points, th.problems, th.username {
+
+    th.rank,
+    th.points,
+    th.problems,
+    th.username {
         white-space: nowrap;
     }
 
-    th.rank, th.rate {
+    th.rank,
+    th.rate {
         padding-left: 5px;
         padding-right: 5px;
     }
 
-    th.rate, td.rate {
+    th.rate,
+    td.rate {
         border-right: none;
         text-align: left;
     }
@@ -56,7 +63,8 @@ tr:target {
     th a {
         color: $color_primary0;
 
-        &:link, &:visited {
+        &:link,
+        &:visited {
             color: $color_primary0;
         }
     }
@@ -89,12 +97,12 @@ tr:target {
     overflow: hidden;
 }
 
-.hide-solved-problems > span {
+.hide-solved-problems>span {
     position: relative;
     display: inline-block;
 }
 
-.hide-solved-problems > span:before {
+.hide-solved-problems>span:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -198,9 +206,12 @@ img.user-gravatar {
 #submission-activity {
     #submission-activity-actions {
         text-align: center;
-        #prev-year-action, #next-year-action {
+
+        #prev-year-action,
+        #next-year-action {
             font-size: 1.75em;
         }
+
         #year {
             font-size: 1.25em;
             color: $color_primary75;
@@ -269,18 +280,23 @@ img.user-gravatar {
                 &.activity-blank {
                     background-color: $color_pageBg;
                 }
+
                 &.activity-0 {
                     background-color: $color_user_submission_activity0;
                 }
+
                 &.activity-1 {
                     background-color: $color_user_submission_activity1;
                 }
+
                 &.activity-2 {
                     background-color: $color_user_submission_activity2;
                 }
+
                 &.activity-3 {
                     background-color: $color_user_submission_activity3;
                 }
+
                 &.activity-4 {
                     background-color: $color_user_submission_activity4;
                 }

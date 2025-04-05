@@ -2,8 +2,8 @@
 
 /* Hack to make dropdown background follow theming */
 .select2-dropdown {
-    background-color: $color_primary0 !important;
-    border: 1px solid $color_primary33 !important;
+    background-color: $light_backgroud !important;
+    border: 1px solid $color_border;
     color: $color_primary100 !important;
 }
 
@@ -12,14 +12,18 @@
     @import "select2/multiple";
 
     &.select2-container--open.select2-container--above {
-        .select2-selection--single, .select2-selection--multiple {
+
+        .select2-selection--single,
+        .select2-selection--multiple {
             border-top-left-radius: 0;
             border-top-right-radius: 0;
         }
     }
 
     &.select2-container--open.select2-container--below {
-        .select2-selection--single, .select2-selection--multiple {
+
+        .select2-selection--single,
+        .select2-selection--multiple {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
         }
@@ -27,9 +31,9 @@
 
     .select2-search--dropdown {
         .select2-search__field {
-            border: 1px solid $color_primary33;
-            background-color: $color_select2_search_dropdown;
-            color: $color_primary100;
+            border: 1px solid $color_border;
+            background-color: $light_backgroud;
+            color: $color;
         }
     }
 
@@ -39,15 +43,15 @@
             border: none;
             outline: 0;
             box-shadow: none;
-            color: $color_primary100;
+            color: $color;
             -webkit-appearance: textfield;
         }
     }
 
-    .select2-results > .select2-results__options {
+    .select2-results>.select2-results__options {
         max-height: 200px;
         overflow-y: auto;
-        color: $color_primary100;
+        color: $color;
     }
 
     .select2-results__option {
@@ -56,11 +60,11 @@
         }
 
         &[aria-disabled=true] {
-            color: $color_primary50;
+            color: $color;
         }
 
         &[aria-selected=true] {
-            background-color: $color_primary25;
+            background-color: $light_backgroud;
         }
 
         .select2-results__option {

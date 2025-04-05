@@ -22,7 +22,7 @@ from judge.views.select2 import AssigneeSelect2View, ClassSelect2View, CommentSe
     ContestUserSearchSelect2View, OrganizationSelect2View, ProblemSelect2View, TicketUserSelect2View, \
     UserSearchSelect2View, UserSelect2View
 from judge.views.widgets import martor_image_uploader
-
+from judge.views.about import AboutView
 admin.autodiscover()
 
 register_patterns = [
@@ -358,7 +358,7 @@ urlpatterns = [
         path('contest/', ContestSelect2View.as_view(), name='contest_select2'),
         path('comment/', CommentSelect2View.as_view(), name='comment_select2'),
     ])),
-
+path('about/', AboutView.as_view(), name="about"),
     path('tasks/', include([
         path('status/<slug:task_id>', tasks.task_status, name='task_status'),
         path('ajax_status', tasks.task_status_ajax, name='task_status_ajax'),

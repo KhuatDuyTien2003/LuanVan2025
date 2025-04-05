@@ -1,0 +1,14 @@
+archive: test2.zip
+test_cases:
+- in: test2/1.in
+  out: test2/1.out
+  points: 25
+- in: test2/2.in
+  out: test2/2.out
+  points: 25
+- in: test2/3.in
+  out: test2/3.out
+  points: 25
+- in: test2/4.in
+  out: test2/4.out
+  points: 25

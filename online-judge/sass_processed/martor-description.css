@@ -11,17 +11,28 @@ form .martor-preview img {
   max-width: 100%;
   height: auto;
 }
-form .martor-preview img.tex-full, form .martor-preview img.tex-image, form .martor-preview img.inline-math, form .martor-preview img.display-math {
+form .martor-preview img.tex-full,
+form .martor-preview img.tex-image,
+form .martor-preview img.inline-math,
+form .martor-preview img.display-math {
   filter: invert(1) hue-rotate(180deg);
 }
-form .martor-preview h1, form .martor-preview h2, form .martor-preview h3, form .martor-preview h4, form .martor-preview h5, form .martor-preview h6 {
+form .martor-preview h1,
+form .martor-preview h2,
+form .martor-preview h3,
+form .martor-preview h4,
+form .martor-preview h5,
+form .martor-preview h6 {
   font-weight: normal;
-  color: #eee;
+  color: #ff7a4e;
   margin-bottom: 0.75em;
   padding: 0;
   background: 0;
 }
-form .martor-preview h3, form .martor-preview h4, form .martor-preview h5, form .martor-preview h6 {
+form .martor-preview h3,
+form .martor-preview h4,
+form .martor-preview h5,
+form .martor-preview h6 {
   font-weight: bold;
 }
 form .martor-preview h1 {
@@ -64,13 +75,18 @@ form .martor-preview hr {
   margin: 25px 0 20px 0;
   padding: 0;
 }
-form .martor-preview pre, form .martor-preview code, form .martor-preview kbd, form .martor-preview samp, form .martor-preview span.code {
+form .martor-preview pre,
+form .martor-preview code,
+form .martor-preview kbd,
+form .martor-preview samp,
+form .martor-preview span.code {
   color: #f8f8f8;
   page-break-inside: avoid;
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   font-size: 0.98em;
 }
-form .martor-preview code, form .martor-preview span.code {
+form .martor-preview code,
+form .martor-preview span.code {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
   margin: 0 2px;
   padding: 0 5px;
@@ -90,7 +106,8 @@ form .martor-preview pre {
   color: #f8f8f8;
   border-radius: 4px;
 }
-form .martor-preview pre code, form .martor-preview pre div.code {
+form .martor-preview pre code,
+form .martor-preview pre div.code {
   border: 0;
   line-height: 1em;
   margin: 0;
@@ -99,7 +116,8 @@ form .martor-preview pre code, form .martor-preview pre div.code {
   font-size: 1em;
   color: #f8f8f8;
 }
-form .martor-preview b, form .martor-preview strong {
+form .martor-preview b,
+form .martor-preview strong {
   font-weight: bold;
 }
 form .martor-preview dfn {
@@ -132,7 +150,8 @@ form .martor-preview sup {
 form .martor-preview sub {
   bottom: -0.25em;
 }
-form .martor-preview ul, form .martor-preview ol {
+form .martor-preview ul,
+form .martor-preview ol {
   padding: 0 0 0 2em;
 }
 form .martor-preview li p:last-child {
